@@ -25,22 +25,22 @@ class Kubebolt < Formula
   on_macos do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-arm64"
-      sha256 "ca7baa260612f623f540223e1b72b56602525adb02e12f718e70c565b60170db"
+      sha256 "e8535047961942e52fd964479aa3b99970c9827f5f88486d51659afd98406c84"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-amd64"
-      sha256 "9c60c0df24ddca40a720c94648df39e7f59066c93ca14cee900553ba9b2f7914"
+      sha256 "ffa7c10b955b089a5e2ebcc57a67b056ab643b9f329235c0a492a8c4568a855a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-arm64"
-      sha256 "bc085a60b24fa11758dd26b33edb5b237387fba0cba28a79ba7a2a318cd431c4"
+      sha256 "3cc9dcafc53b947aba1c330a768a9b3579edab454a70c3864857dde20519ee28"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-amd64"
-      sha256 "640b44f2f080e6a238cf307c1689cde5a33328db2f4d21b8a0f513447b13e708"
+      sha256 "1d3cd24df8ca7d33a295d4ef0e374d5e23abd0921cba239f21dcfc085e446de4"
     end
   end
 
