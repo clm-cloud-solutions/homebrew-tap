@@ -5,7 +5,7 @@
 # On each release, the workflow:
 #   1. Downloads the binaries
 #   2. Computes SHA256 for each
-#   3. Replaces 1.23.1 / __SHA_*__ placeholders
+#   3. Replaces 1.23.2 / __SHA_*__ placeholders
 #   4. Commits the updated formula to the tap repo
 #
 # User-facing install:
@@ -19,28 +19,28 @@
 class Kubebolt < Formula
   desc "Instant Kubernetes monitoring and management — full cluster visibility in under 2 minutes"
   homepage "https://github.com/clm-cloud-solutions/kubebolt"
-  version "1.23.1"
+  version "1.23.2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-arm64"
-      sha256 "af62ef4a1763a9ce3d3ad644381c75825511f4529e2b47bfa7213f5b62f411db"
+      sha256 "190976f0743de8c9867e82df274464bc80dc3e5d04037582756ff90804f0c8db"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-amd64"
-      sha256 "f4dd594e2e96b04b6e67cd309bc0414db4db59ce8e6a178c82075fe7db02ebe1"
+      sha256 "8efc44dbf904ad343fce7617f80110b12a8d76431e52a30a25effcb549ff1b34"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-arm64"
-      sha256 "7f74dd95bd81c3d257d98892cecaaddbe2f9aacd49c478a98d5e793cdc838004"
+      sha256 "d259dd82f2690e3974364f5b358f2cc335eeb05bd7d83e915ac632ce3b42b310"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-amd64"
-      sha256 "8d7ad103934e416b3297f174a641e42a7bd20ae09610632bdc41df377252a710"
+      sha256 "af97c1cf6a07054926adbf326d43fc43cece1712c3b60cda423d11d266b4eccd"
     end
   end
 
