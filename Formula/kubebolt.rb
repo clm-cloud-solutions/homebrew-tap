@@ -5,7 +5,7 @@
 # On each release, the workflow:
 #   1. Downloads the binaries
 #   2. Computes SHA256 for each
-#   3. Replaces 2.1.0 / __SHA_*__ placeholders
+#   3. Replaces 2.1.1 / __SHA_*__ placeholders
 #   4. Commits the updated formula to the tap repo
 #
 # User-facing install:
@@ -17,30 +17,30 @@
 #   3. Add it as HOMEBREW_TAP_TOKEN secret in this repo's settings
 #   4. The update-homebrew-tap job in release.yml handles the rest
 class Kubebolt < Formula
-  desc "Instant Kubernetes monitoring and management — full cluster visibility in under 2 minutes"
+  desc "Open-source Kubernetes operations platform: health, insights, operations, security and cost"
   homepage "https://github.com/clm-cloud-solutions/kubebolt"
-  version "2.1.0"
+  version "2.1.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-arm64"
-      sha256 "1648a24e646b0cc8024f6ebb51d5a51367a1b96e2f7587c34f3ecc73613d863b"
+      sha256 "7a8c4dc68dc6616c9eaa3a41378c5024cf3ce311b099760fcbe1585416aa494e"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-darwin-amd64"
-      sha256 "95545ab3ce1c0caba5f30d0769a5fecf5ad35eeca6c1da36b68a8fb907dc6a75"
+      sha256 "121ebeaf2e4d59699c1d04a0a34bcfe468de21bbf0a4fac370ba7746ed1580ad"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-arm64"
-      sha256 "8528790ef58ec02aaebfed65e89074c8e81583acfb7c5cb401119ada11ce5b9b"
+      sha256 "5673586b7135f23dc559b885d36f63a78ace9750de4307b74c937cfc90b4b987"
     end
     on_intel do
       url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-linux-amd64"
-      sha256 "a9e884ed6cde4b282f79659f417e70ff4ec874690a35a83b7d9eacd913c7fb3a"
+      sha256 "4cfd3788c992c93014b8a5d858f01579f52228d4e2cd2cc28b4f4d97238825a7"
     end
   end
 
