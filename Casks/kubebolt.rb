@@ -2,11 +2,11 @@ cask "kubebolt" do
   arch arm: "arm64", intel: "amd64"
   os macos: "darwin", linux: "linux"
 
-  version "2.3.0"
-  sha256 arm:          "e9dc009b221c17470b2bed4f4b65bb417274a0eff9048119864e6d0704b0b59d",
-         intel:        "c49a1cd943c827f32ce39bf05abea8f234f175f4408bffc9a0e4843c7c29e9d5",
-         arm64_linux:  "1f36d63de73fdac07d1b7b2227abf86694e14fe0efdaf67a3ceb476eb87c5eaf",
-         x86_64_linux: "ee41a12807e766c718d2d8547d770bbc332c82c5c1ab8f441bef51c423ac9905"
+  version "2.3.1"
+  sha256 arm:          "da4fd98c465a6e2832b5b975d4903df4d496b55934abccdc3d89021dba08de63",
+         intel:        "db425099261bca0ee597bc9d174547a7fb7b9ff05900d2263f42d52506390dfe",
+         arm64_linux:  "a31a7889cb961dcdac9b506c42db550e7346c8465feb65f7747632570765df7c",
+         x86_64_linux: "d77384007204443bf679e3e1d739a5b644903305196d908e3bd35956e6a83342"
 
   url "https://github.com/clm-cloud-solutions/kubebolt/releases/download/v#{version}/kubebolt-#{os}-#{arch}"
   name "KubeBolt"
